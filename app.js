@@ -5,7 +5,7 @@
 // const loadData = () => {
 //     fetch("https://api.spacexdata.com/v5/launches") // Retrieves existing data from API
 //         .then(result => result.json())  // Converts data to json format
-//         .then(data => launches = data)  // Sets launches array to contain data
+//         .then(data => launches = data)  // Sets launches array to contain data from previous .then
 //         .then(() => {console.log(launches)}) // Logs launches array to console - just checking data has been stored
 //         .then(() => {
 
@@ -32,7 +32,7 @@ let launches = []; // Creates initial empty array for our launch details
 const loadData = () => {
     fetch("https://api.spacexdata.com/v5/launches") // Retrieves existing data from API
         .then(result => result.json())  // Converts data to json format
-        .then(data => launches = data)  // Sets launches array to contain data
+        .then(data => launches = data)  // Sets launches array to contain data from previous .then
         .then(() => {console.log(launches)}) // Logs launches array to console - just checking data has been stored
         .then(() => {
 
